@@ -1,0 +1,13 @@
+/DumpContacts/.vs/DumpContacts/config/applicationhost.config
+/DumpContacts/.vs/DumpContacts/v16/.suo
+/DumpContacts/.vs/DumpContacts/v16/Server/sqlite3/db.lock
+/DumpContacts/.vs/DumpContacts/v16/Server/sqlite3/storage.ide
+/DumpContacts/.vs/DumpContacts/v16/Server/sqlite3/storage.ide-shm
+/DumpContacts/.vs/DumpContacts/v16/Server/sqlite3/storage.ide-wal
+/DumpContacts/bin/*
+/DumpContacts/ConsoleApp6/bin/*
+/DumpContacts/obj/Debug/*
+/DumpContacts/packages/*
+/DumpContacts/obj/*
+/DumpContacts/ConsoleApp6/*
+/DumpContacts/ConsoleApp6.csproj.DotSettings
