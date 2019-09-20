@@ -395,7 +395,7 @@
         <h2>Working with Contact</h2>
         <br>
         Contact ID: <asp:TextBox ID="contactIdRTF" runat="server" style="width:300px" /> 
-		<%--<asp:Button ID="RTBF" runat="server" Text="Execute Right to be forgotten!" OnClick="RTBF_Click" />--%>
+		<asp:Button ID="RTBF" runat="server" Text="Execute Right to be forgotten!" OnClick="RTBF_Click" />
 		<asp:Button ID="Delete" runat="server" Text="Delete Contact!" OnClick="Delete_Click" />
 		<asp:Button ID="SessionAbandon" runat="server" Text="Abandon Session!" OnClick="SessionAbandon_Click" />
         <asp:Label ID="ContactError" runat="server" />
