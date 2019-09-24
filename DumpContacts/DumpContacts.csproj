@@ -192,6 +192,9 @@
     <Content Include="Admin Pages\ExecuteRTBF.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
+    <Content Include="Admin Pages\DeleteContact.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
