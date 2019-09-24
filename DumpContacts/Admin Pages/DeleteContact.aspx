@@ -91,23 +91,6 @@
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        //if (!Tracker.IsActive)
-        //throw new NotSupportedException("tracker isn't active!");
-        //if (!Tracker.Enabled)
-        //throw new NotSupportedException("tracker isn't enabled!");
-
-        //Response.Write("System.Environment.MachineName is: " + System.Environment.MachineName + "<p>");
-
-        //HttpCookie myCookie = HttpContext.Current.Request.Cookies["SC_ANALYTICS_GLOBAL_COOKIE"];
-        //Response.Write("SC_ANALYTICS_GLOBAL_COOKIE: " + myCookie.Value.ToString() + "<p>");
-
-        //var contact = Tracker.Current.Contact;
-
-        //Response.Write("ContactId is: " + contact.ContactId.ToString() + "<p>");
-
-        //Contact context data
-        //contactIdentifier.Text = "Tracker.Current.Contact.Identifiers.Identifier is: " + "<b>" + contact.Identifiers.GetEnumerator().Current + "</b>";
-        //contactNameLabel.Text = "Submitted contact name: " + contactName.Text;
         contactPhoneLabel.Text = "Submitted phone number: " + contactPhoneCountryCode.Text + contactPhoneNumber.Text + contactPhoneExtension.Text;
         contactEmailLabel.Text = "Submitted email: " + contactEmailEmail.Text;
         contactAddressLabel.Text = "Submitted contact address: " + contactAddressCountry.Text + ", " +
@@ -126,22 +109,6 @@
                                    contactPersonalJobTitle.Text;
     }
 
-    //protected async void IdentifyContact_Click(object sender, EventArgs e)
-    //{
-    //    //Identification
-    //    var testSource = "TestSource";
-    //    if (contactName.Text == "")
-    //    {
-    //        contactNameLabel.Text = "Such name is not valid/correct.";
-    //    }
-    //    else
-    //    {
-    //        Tracker.Current.Session.IdentifyAs(testSource, contactName.Text);
-    //        KnownContact = await client.GetContactAsync(new IdentifiedContactReference(testSource, contactName.Text), new ExpandOptions());
-    //        contactIdLabel.Text = KnownContact.Id.ToString();
-    //    }
-    //}
-
     protected async void TryLoadContact_Click(object sender, EventArgs e)
     {
         if (contactId.Text == "")
@@ -150,19 +117,66 @@
         }
         else
         {
-            KnownContact = await client.GetContactAsync(new Guid(contactId.Text), new ExpandOptions());
+            KnownContact = await client.GetContactAsync(new Guid(contactId.Text), new ExpandOptions(PersonalInformation.DefaultFacetKey, PhoneNumberList.DefaultFacetKey, EmailAddressList.DefaultFacetKey, AddressList.DefaultFacetKey));
             if (KnownContact == null)
             {
                 contactIdLabel.Text = string.Empty;
                 contactDetailLabel.Text = "Contact does not exist in xConnect anymore.";
+                tblContactData.Visible = false;
+
             }
             else
             {
                 contactIdLabel.Text = KnownContact.Id.ToString();
                 contactDetailLabel.Text = "Contact exists in xConnect.";
+                tblContactData.Visible = true;
+                PopulateContactData(KnownContact);
             }
 
         }
+    }
+
+    private void PopulateContactData(Contact contact)
+    {
+        var phonenumbers = KnownContact.GetFacet<PhoneNumberList>();
+        if (phonenumbers != null)
+        {
+            lblPhoneEntry.Text = phonenumbers.PreferredKey;
+            lblPhoneCountryCode.Text = phonenumbers.PreferredPhoneNumber.CountryCode;
+            lblPhoneExtension.Text = phonenumbers.PreferredPhoneNumber.Extension;
+            lblPhoneNumber.Text = phonenumbers.PreferredPhoneNumber.Number;
+        }
+
+        var Pii = KnownContact.GetFacet<PersonalInformation>();
+        if (Pii != null)
+        {
+            lblPITitle.Text = Pii.Title;
+            lblPIFirstName.Text = Pii.FirstName;
+            lblPIMiddleName.Text = Pii.MiddleName;
+            lblPISurname.Text = Pii.LastName;
+            lblPISuffix.Text = Pii.Suffix;
+            lblPIGender.Text = Pii.Gender;
+            lblPIJobtitle.Text = Pii.JobTitle;
+        }
+
+        var email = KnownContact.GetFacet<EmailAddressList>();
+        if (email != null)
+        {
+            lblEmailEntry.Text = email.PreferredKey;
+            lblEmail.Text = email.PreferredEmail.SmtpAddress;
+        }
+
+        var address = KnownContact.GetFacet<AddressList>();
+        if (address != null)
+        {
+            lblAddressEntry.Text = address.PreferredKey;
+            lblAddressCountry.Text = address.PreferredAddress.CountryCode;
+            lblAddressCity.Text = address.PreferredAddress.City;
+            lblAddressPostalCode.Text = address.PreferredAddress.PostalCode;
+            lblAddressStateProvince.Text = address.PreferredAddress.StateOrProvince;
+            lblAddressStreetLine1.Text = address.PreferredAddress.AddressLine1;
+        }
+
     }
 
     protected async void AddIContactPhoneNumber_Click(object sender, EventArgs e)
@@ -313,13 +327,6 @@
         }
     }
 
-
-
-    //protected void SessionAbandon_Click(object sender, EventArgs e)
-    //{
-    //    Session.Abandon();
-    //}
-
     protected async void RTBF_Click(object sender, EventArgs e)
     {
 
@@ -364,7 +371,6 @@
         }
     }
 
-
     private void Contact_Click(object sender, EventArgs e)
     {
         var contact = new Contact();
@@ -373,19 +379,6 @@
         KnownContact = contact;
         contactIdLabel.Text = KnownContact.Id.ToString();
     }
-
-    //private void Merge_Click(object sender, EventArgs e)
-    //{
-    //    if (Source.Text == "" || Target.Text == "")
-    //    {
-    //        MergeInfo.Text = "<h5> Both Source and Target IDs should be specified";
-    //    }
-    //    else
-    //    {
-    //        client.MergeContacts(new ContactReference(new Guid(Source.Text)), new ContactReference(new Guid(Target.Text)));
-    //        client.SubmitAsync();
-    //    }
-    //}
 
 </script>
 
@@ -401,23 +394,8 @@
 <body style="margin-left: 10px">
     <form method="post" runat="server" id="mainform">
         <div id="MainPanel">
-            <%--<sc:Placeholder Key="main" runat="server" />--%>
-
             <h2>Working with Contact</h2>
             <br>
-            <%--<h3>Merge Contacts</h3>
-        <br>
-        Contact Source ID: <asp:TextBox ID="Source" runat="server" />
-        Contact Target ID: <asp:TextBox ID="Target" runat="server" />
-        <asp:Button ID="Merge" runat="server" Text="Merge Contacts" OnClick="Merge_Click" />
-        <asp:Label ID="MergeInfo" runat="server" />--%>
-            <%--<p>
-                <h3>Identify Contact</h3>
-                <br>
-                Contact Identificator:
-                <asp:TextBox ID="contactName" runat="server" />
-                <asp:Button ID="IdentifyContact" runat="server" Text="Submit Contact Name" OnClick="IdentifyContact_Click" />
-                <asp:Label ID="contactNameLabel" runat="server" />--%>
             <p>
                 <h3>Load contact</h3>
                 <br>
@@ -427,13 +405,79 @@
                 <asp:Label ID="contactIdLabel" runat="server" />
                 <asp:Label ID="contactDetailLabel" runat="server" />
             <p>
+                <table id="tblContactData" runat="server">
+                    <tr>
+                        <td>
+                            <h3>Contact Data</h3>
+                            <h4>Personal Info</h4>
+                            <br>
+                            Title:
+                            <asp:Label ID="lblPITitle" runat="server" /><br>
+                            FirstName:
+                            <asp:Label ID="lblPIFirstName" runat="server" /><br>
+                            MiddleName:
+                            <asp:Label ID="lblPIMiddleName" runat="server" /><br>
+                            Surname:
+                            <asp:Label ID="lblPISurname" runat="server" /><br>
+                            Suffix:
+                            <asp:Label ID="lblPISuffix" runat="server" /><br>
+                            Gender:
+                            <asp:Label ID="lblPIGender" runat="server" /><br>
+                            JobTitle:
+                            <asp:Label ID="lblPIJobtitle" runat="server" /><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <h4>Phone Number</h4>
+                            Entry:
+                            <asp:Label ID="lblPhoneEntry" runat="server" /><br>
+                            CountryCode:
+                            <asp:Label ID="lblPhoneCountryCode" runat="server" /><br>
+                            Number:
+                            <asp:Label ID="lblPhoneNumber" runat="server" /><br>
+                            Extension:
+                            <asp:Label ID="lblPhoneExtension" runat="server" /><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Email Addresses</h4>
+                            <br>
+                            Entry:
+                            <asp:Label ID="lblEmailEntry" runat="server" /><br>
+                            Email:
+                            <asp:Label ID="lblEmail" runat="server" Text="" /><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Addresses</h4>
+                            <br>
+                            Entry:
+                            <asp:Label ID="lblAddressEntry" runat="server" /><br>
+                            Country:
+                            <asp:Label ID="lblAddressCountry" runat="server" /><br>
+                            City:
+                            <asp:Label ID="lblAddressCity" runat="server" /><br>
+                            PostalCode:
+                            <asp:Label ID="lblAddressPostalCode" runat="server" /><br>
+                            StateProvince:
+                            <asp:Label ID="lblAddressStateProvince" runat="server" /><br>
+                            StreetLine1:
+                            <asp:Label ID="lblAddressStreetLine1" runat="server" /><br>
+                        </td>
+                    </tr>
+
+                </table>
+            </p>
+            <p>
                 <h3>Delete Contact</h3>
                 <br />
                 Contact ID:
-            <asp:TextBox ID="contactIdRTF" runat="server" Style="width: 300px" />
-                <%--<asp:Button ID="RTBF" runat="server" Text="Execute Right to be forgotten!" OnClick="RTBF_Click" />--%>
+                <asp:TextBox ID="contactIdRTF" runat="server" Style="width: 300px" />
                 <asp:Button ID="Delete" runat="server" Text="Delete Contact!" OnClick="Delete_Click" />
-                <%--<asp:Button ID="SessionAbandon" runat="server" Text="Abandon Session!" OnClick="SessionAbandon_Click" />--%>
                 <asp:Label ID="ContactError" runat="server" />
                 <br>
                 <p>
