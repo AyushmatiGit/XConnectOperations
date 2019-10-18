@@ -1,0 +1,3205 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "Microsoft.AspNet.WebApi.Client/5.2.6": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.DotNet.PlatformAbstractions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net45/Microsoft.DotNet.PlatformAbstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.DotNet.PlatformAbstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Binder/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.CommandLine/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.CommandLine.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.CommandLine.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.EnvironmentVariables/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.FileExtensions/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.FileProviders.Physical": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Ini/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Configuration.FileExtensions": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Ini.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Ini.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Json/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Configuration.FileExtensions": "2.1.1",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Xml/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Configuration.FileExtensions": "2.1.1",
+          "System.Security.Cryptography.Xml": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Xml.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Xml.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyModel/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.DotNet.PlatformAbstractions": "2.1.0",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/Microsoft.Extensions.DependencyModel.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Extensions.DependencyModel.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Physical/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "2.1.1",
+          "Microsoft.Extensions.FileSystemGlobbing": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileSystemGlobbing/2.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.1",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+        }
+      },
+      "Newtonsoft.Json/11.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Remotion.Linq/2.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Remotion.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Remotion.Linq.dll": {}
+        }
+      },
+      "Sitecore.Framework.Conditions/4.1.0-alpha1.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Conditions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Conditions.dll": {}
+        }
+      },
+      "Sitecore.Framework.Configuration/5.4.0-alpha1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Configuration.Ini": "2.1.1",
+          "Microsoft.Extensions.Configuration.Json": "2.1.1",
+          "Microsoft.Extensions.Configuration.Xml": "2.1.1",
+          "Microsoft.Extensions.DependencyInjection": "2.1.1",
+          "Microsoft.Extensions.DependencyModel": "2.1.0",
+          "Sitecore.Framework.Configuration.Abstractions": "5.4.0-alpha1.2",
+          "Sitecore.Framework.Configuration.Common": "5.4.0-alpha1.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.dll": {}
+        }
+      },
+      "Sitecore.Framework.Configuration.Abstractions/5.4.0-alpha1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.1.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
+          "Microsoft.Extensions.FileProviders.Physical": "2.1.1",
+          "Sitecore.Framework.Conditions": "4.1.0-alpha1.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Sitecore.Framework.Configuration.Common/5.4.0-alpha1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.Common.dll": {}
+        }
+      },
+      "Sitecore.Framework.Configuration.Extensions/5.4.0-alpha1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Configuration.Binder": "2.1.1",
+          "Microsoft.Extensions.Configuration.CommandLine": "2.1.1",
+          "Microsoft.Extensions.Configuration.EnvironmentVariables": "2.1.1",
+          "Microsoft.Extensions.Configuration.Ini": "2.1.1",
+          "Microsoft.Extensions.Configuration.Json": "2.1.1",
+          "Microsoft.Extensions.Configuration.Xml": "2.1.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
+          "Microsoft.Extensions.FileSystemGlobbing": "2.1.1",
+          "Sitecore.Framework.Conditions": "4.1.0-alpha1.2",
+          "Sitecore.Framework.Configuration": "5.4.0-alpha1.2",
+          "Sitecore.Framework.Configuration.Abstractions": "5.4.0-alpha1.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.Extensions.dll": {}
+        }
+      },
+      "Sitecore.XConnect/5.0.0-r00265.1294": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "Remotion.Linq": "2.2.0",
+          "Sitecore.XConnect.Core": "3.1.0-r00245.912",
+          "Sitecore.XConnect.Diagnostics": "3.3.0-r00090.718",
+          "Sitecore.XConnect.Search": "2.3.0-r00083.463",
+          "System.Interactive.Async.Providers": "3.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.XConnect.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.XConnect.dll": {}
+        }
+      },
+      "Sitecore.XConnect.Client/2.1.0-r00137.42": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.XConnect": "2.1.0-r00224",
+          "Sitecore.Xdb.Common.Web": "3.1.0-r00052.31"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.XConnect.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.XConnect.Client.dll": {}
+        }
+      },
+      "Sitecore.XConnect.Collection.Model/2.1.0-r00224": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.XConnect": "2.1.0-r00224"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.XConnect.Collection.Model.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.XConnect.Collection.Model.dll": {}
+        }
+      },
+      "Sitecore.XConnect.Core/3.1.0-r00245.912": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "Remotion.Linq": "2.2.0",
+          "Sitecore.XConnect.Diagnostics": "3.3.0-r00090.718",
+          "Sitecore.XConnect.Search": "2.3.0-r00083.463",
+          "System.Interactive.Async.Providers": "3.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.XConnect.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.XConnect.Core.dll": {}
+        }
+      },
+      "Sitecore.XConnect.Diagnostics/3.3.0-r00090.718": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
+          "Sitecore.Framework.Conditions": "4.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.XConnect.Diagnostics.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.XConnect.Diagnostics.dll": {}
+        }
+      },
+      "Sitecore.XConnect.Search/2.3.0-r00083.463": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Framework.Conditions": "4.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.XConnect.Search.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.XConnect.Search.dll": {}
+        }
+      },
+      "Sitecore.Xdb.Common.Web/3.3.0-r00057.465": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.6",
+          "Microsoft.Extensions.DependencyInjection": "2.1.1",
+          "Newtonsoft.Json": "11.0.2",
+          "Sitecore.Framework.Configuration.Extensions": "5.3.0",
+          "System.Interactive.Async": "3.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Xdb.Common.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Xdb.Common.Web.dll": {}
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {}
+        }
+      },
+      "System.Interactive.Async/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net46/System.Interactive.Async.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Interactive.Async.dll": {}
+        }
+      },
+      "System.Interactive.Async.Providers/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Interactive.Async": "3.1.1"
+        },
+        "compile": {
+          "lib/net45/System.Interactive.Async.Providers.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Interactive.Async.Providers.dll": {}
+        }
+      },
+      "System.Memory/4.5.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/_._": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.RuntimeInformation/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.AccessControl/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Principal.Windows": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.AccessControl.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.AccessControl.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net461/System.Security.AccessControl.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Cryptography.Xml/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Permissions": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Security",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Cryptography.Xml.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.Cryptography.Xml.dll": {}
+        }
+      },
+      "System.Security.Permissions/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.AccessControl": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Data",
+          "System.Data.OracleClient",
+          "System.Drawing",
+          "System.Net",
+          "System.ServiceProcess",
+          "System.Transactions",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.Permissions.dll": {}
+        }
+      },
+      "System.Security.Principal.Windows/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Principal.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.Principal.Windows.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net461/System.Security.Principal.Windows.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win": {
+      "Microsoft.AspNet.WebApi.Client/5.2.6": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.DotNet.PlatformAbstractions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net45/Microsoft.DotNet.PlatformAbstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.DotNet.PlatformAbstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Binder/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.CommandLine/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.CommandLine.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.CommandLine.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.EnvironmentVariables/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.FileExtensions/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.FileProviders.Physical": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Ini/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Configuration.FileExtensions": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Ini.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Ini.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Json/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Configuration.FileExtensions": "2.1.1",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Xml/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Configuration.FileExtensions": "2.1.1",
+          "System.Security.Cryptography.Xml": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Xml.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Xml.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyModel/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.DotNet.PlatformAbstractions": "2.1.0",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/Microsoft.Extensions.DependencyModel.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Extensions.DependencyModel.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Physical/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "2.1.1",
+          "Microsoft.Extensions.FileSystemGlobbing": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileSystemGlobbing/2.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.1",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+        }
+      },
+      "Newtonsoft.Json/11.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Remotion.Linq/2.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Remotion.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Remotion.Linq.dll": {}
+        }
+      },
+      "Sitecore.Framework.Conditions/4.1.0-alpha1.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Conditions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Conditions.dll": {}
+        }
+      },
+      "Sitecore.Framework.Configuration/5.4.0-alpha1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Configuration.Ini": "2.1.1",
+          "Microsoft.Extensions.Configuration.Json": "2.1.1",
+          "Microsoft.Extensions.Configuration.Xml": "2.1.1",
+          "Microsoft.Extensions.DependencyInjection": "2.1.1",
+          "Microsoft.Extensions.DependencyModel": "2.1.0",
+          "Sitecore.Framework.Configuration.Abstractions": "5.4.0-alpha1.2",
+          "Sitecore.Framework.Configuration.Common": "5.4.0-alpha1.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.dll": {}
+        }
+      },
+      "Sitecore.Framework.Configuration.Abstractions/5.4.0-alpha1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.1.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
+          "Microsoft.Extensions.FileProviders.Physical": "2.1.1",
+          "Sitecore.Framework.Conditions": "4.1.0-alpha1.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Sitecore.Framework.Configuration.Common/5.4.0-alpha1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.Common.dll": {}
+        }
+      },
+      "Sitecore.Framework.Configuration.Extensions/5.4.0-alpha1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Configuration.Binder": "2.1.1",
+          "Microsoft.Extensions.Configuration.CommandLine": "2.1.1",
+          "Microsoft.Extensions.Configuration.EnvironmentVariables": "2.1.1",
+          "Microsoft.Extensions.Configuration.Ini": "2.1.1",
+          "Microsoft.Extensions.Configuration.Json": "2.1.1",
+          "Microsoft.Extensions.Configuration.Xml": "2.1.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
+          "Microsoft.Extensions.FileSystemGlobbing": "2.1.1",
+          "Sitecore.Framework.Conditions": "4.1.0-alpha1.2",
+          "Sitecore.Framework.Configuration": "5.4.0-alpha1.2",
+          "Sitecore.Framework.Configuration.Abstractions": "5.4.0-alpha1.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.Extensions.dll": {}
+        }
+      },
+      "Sitecore.XConnect/5.0.0-r00265.1294": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "Remotion.Linq": "2.2.0",
+          "Sitecore.XConnect.Core": "3.1.0-r00245.912",
+          "Sitecore.XConnect.Diagnostics": "3.3.0-r00090.718",
+          "Sitecore.XConnect.Search": "2.3.0-r00083.463",
+          "System.Interactive.Async.Providers": "3.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.XConnect.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.XConnect.dll": {}
+        }
+      },
+      "Sitecore.XConnect.Client/2.1.0-r00137.42": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.XConnect": "2.1.0-r00224",
+          "Sitecore.Xdb.Common.Web": "3.1.0-r00052.31"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.XConnect.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.XConnect.Client.dll": {}
+        }
+      },
+      "Sitecore.XConnect.Collection.Model/2.1.0-r00224": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.XConnect": "2.1.0-r00224"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.XConnect.Collection.Model.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.XConnect.Collection.Model.dll": {}
+        }
+      },
+      "Sitecore.XConnect.Core/3.1.0-r00245.912": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "Remotion.Linq": "2.2.0",
+          "Sitecore.XConnect.Diagnostics": "3.3.0-r00090.718",
+          "Sitecore.XConnect.Search": "2.3.0-r00083.463",
+          "System.Interactive.Async.Providers": "3.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.XConnect.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.XConnect.Core.dll": {}
+        }
+      },
+      "Sitecore.XConnect.Diagnostics/3.3.0-r00090.718": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
+          "Sitecore.Framework.Conditions": "4.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.XConnect.Diagnostics.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.XConnect.Diagnostics.dll": {}
+        }
+      },
+      "Sitecore.XConnect.Search/2.3.0-r00083.463": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Framework.Conditions": "4.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.XConnect.Search.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.XConnect.Search.dll": {}
+        }
+      },
+      "Sitecore.Xdb.Common.Web/3.3.0-r00057.465": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.6",
+          "Microsoft.Extensions.DependencyInjection": "2.1.1",
+          "Newtonsoft.Json": "11.0.2",
+          "Sitecore.Framework.Configuration.Extensions": "5.3.0",
+          "System.Interactive.Async": "3.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Xdb.Common.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Xdb.Common.Web.dll": {}
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {}
+        }
+      },
+      "System.Interactive.Async/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net46/System.Interactive.Async.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Interactive.Async.dll": {}
+        }
+      },
+      "System.Interactive.Async.Providers/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Interactive.Async": "3.1.1"
+        },
+        "compile": {
+          "lib/net45/System.Interactive.Async.Providers.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Interactive.Async.Providers.dll": {}
+        }
+      },
+      "System.Memory/4.5.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/_._": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.RuntimeInformation/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll": {}
+        }
+      },
+      "System.Security.AccessControl/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Principal.Windows": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.AccessControl.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/net461/System.Security.AccessControl.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Xml/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Permissions": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Security",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Cryptography.Xml.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.Cryptography.Xml.dll": {}
+        }
+      },
+      "System.Security.Permissions/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.AccessControl": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Data",
+          "System.Data.OracleClient",
+          "System.Drawing",
+          "System.Net",
+          "System.ServiceProcess",
+          "System.Transactions",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.Permissions.dll": {}
+        }
+      },
+      "System.Security.Principal.Windows/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Principal.Windows.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/net461/System.Security.Principal.Windows.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x64": {
+      "Microsoft.AspNet.WebApi.Client/5.2.6": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.DotNet.PlatformAbstractions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net45/Microsoft.DotNet.PlatformAbstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.DotNet.PlatformAbstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Binder/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.CommandLine/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.CommandLine.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.CommandLine.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.EnvironmentVariables/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.FileExtensions/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.FileProviders.Physical": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Ini/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Configuration.FileExtensions": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Ini.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Ini.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Json/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Configuration.FileExtensions": "2.1.1",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Xml/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Configuration.FileExtensions": "2.1.1",
+          "System.Security.Cryptography.Xml": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Xml.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Xml.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyModel/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.DotNet.PlatformAbstractions": "2.1.0",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/Microsoft.Extensions.DependencyModel.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Extensions.DependencyModel.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Physical/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "2.1.1",
+          "Microsoft.Extensions.FileSystemGlobbing": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileSystemGlobbing/2.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.1",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+        }
+      },
+      "Newtonsoft.Json/11.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Remotion.Linq/2.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Remotion.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Remotion.Linq.dll": {}
+        }
+      },
+      "Sitecore.Framework.Conditions/4.1.0-alpha1.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Conditions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Conditions.dll": {}
+        }
+      },
+      "Sitecore.Framework.Configuration/5.4.0-alpha1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Configuration.Ini": "2.1.1",
+          "Microsoft.Extensions.Configuration.Json": "2.1.1",
+          "Microsoft.Extensions.Configuration.Xml": "2.1.1",
+          "Microsoft.Extensions.DependencyInjection": "2.1.1",
+          "Microsoft.Extensions.DependencyModel": "2.1.0",
+          "Sitecore.Framework.Configuration.Abstractions": "5.4.0-alpha1.2",
+          "Sitecore.Framework.Configuration.Common": "5.4.0-alpha1.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.dll": {}
+        }
+      },
+      "Sitecore.Framework.Configuration.Abstractions/5.4.0-alpha1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.1.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
+          "Microsoft.Extensions.FileProviders.Physical": "2.1.1",
+          "Sitecore.Framework.Conditions": "4.1.0-alpha1.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Sitecore.Framework.Configuration.Common/5.4.0-alpha1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.Common.dll": {}
+        }
+      },
+      "Sitecore.Framework.Configuration.Extensions/5.4.0-alpha1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Configuration.Binder": "2.1.1",
+          "Microsoft.Extensions.Configuration.CommandLine": "2.1.1",
+          "Microsoft.Extensions.Configuration.EnvironmentVariables": "2.1.1",
+          "Microsoft.Extensions.Configuration.Ini": "2.1.1",
+          "Microsoft.Extensions.Configuration.Json": "2.1.1",
+          "Microsoft.Extensions.Configuration.Xml": "2.1.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
+          "Microsoft.Extensions.FileSystemGlobbing": "2.1.1",
+          "Sitecore.Framework.Conditions": "4.1.0-alpha1.2",
+          "Sitecore.Framework.Configuration": "5.4.0-alpha1.2",
+          "Sitecore.Framework.Configuration.Abstractions": "5.4.0-alpha1.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.Extensions.dll": {}
+        }
+      },
+      "Sitecore.XConnect/5.0.0-r00265.1294": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "Remotion.Linq": "2.2.0",
+          "Sitecore.XConnect.Core": "3.1.0-r00245.912",
+          "Sitecore.XConnect.Diagnostics": "3.3.0-r00090.718",
+          "Sitecore.XConnect.Search": "2.3.0-r00083.463",
+          "System.Interactive.Async.Providers": "3.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.XConnect.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.XConnect.dll": {}
+        }
+      },
+      "Sitecore.XConnect.Client/2.1.0-r00137.42": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.XConnect": "2.1.0-r00224",
+          "Sitecore.Xdb.Common.Web": "3.1.0-r00052.31"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.XConnect.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.XConnect.Client.dll": {}
+        }
+      },
+      "Sitecore.XConnect.Collection.Model/2.1.0-r00224": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.XConnect": "2.1.0-r00224"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.XConnect.Collection.Model.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.XConnect.Collection.Model.dll": {}
+        }
+      },
+      "Sitecore.XConnect.Core/3.1.0-r00245.912": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "Remotion.Linq": "2.2.0",
+          "Sitecore.XConnect.Diagnostics": "3.3.0-r00090.718",
+          "Sitecore.XConnect.Search": "2.3.0-r00083.463",
+          "System.Interactive.Async.Providers": "3.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.XConnect.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.XConnect.Core.dll": {}
+        }
+      },
+      "Sitecore.XConnect.Diagnostics/3.3.0-r00090.718": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
+          "Sitecore.Framework.Conditions": "4.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.XConnect.Diagnostics.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.XConnect.Diagnostics.dll": {}
+        }
+      },
+      "Sitecore.XConnect.Search/2.3.0-r00083.463": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Framework.Conditions": "4.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.XConnect.Search.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.XConnect.Search.dll": {}
+        }
+      },
+      "Sitecore.Xdb.Common.Web/3.3.0-r00057.465": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.6",
+          "Microsoft.Extensions.DependencyInjection": "2.1.1",
+          "Newtonsoft.Json": "11.0.2",
+          "Sitecore.Framework.Configuration.Extensions": "5.3.0",
+          "System.Interactive.Async": "3.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Xdb.Common.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Xdb.Common.Web.dll": {}
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {}
+        }
+      },
+      "System.Interactive.Async/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net46/System.Interactive.Async.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Interactive.Async.dll": {}
+        }
+      },
+      "System.Interactive.Async.Providers/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Interactive.Async": "3.1.1"
+        },
+        "compile": {
+          "lib/net45/System.Interactive.Async.Providers.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Interactive.Async.Providers.dll": {}
+        }
+      },
+      "System.Memory/4.5.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/_._": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.RuntimeInformation/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll": {}
+        }
+      },
+      "System.Security.AccessControl/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Principal.Windows": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.AccessControl.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.AccessControl.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Xml/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Permissions": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Security",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Cryptography.Xml.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.Cryptography.Xml.dll": {}
+        }
+      },
+      "System.Security.Permissions/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.AccessControl": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Data",
+          "System.Data.OracleClient",
+          "System.Drawing",
+          "System.Net",
+          "System.ServiceProcess",
+          "System.Transactions",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.Permissions.dll": {}
+        }
+      },
+      "System.Security.Principal.Windows/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Principal.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.Principal.Windows.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x86": {
+      "Microsoft.AspNet.WebApi.Client/5.2.6": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.DotNet.PlatformAbstractions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net45/Microsoft.DotNet.PlatformAbstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.DotNet.PlatformAbstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Binder/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.CommandLine/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.CommandLine.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.CommandLine.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.EnvironmentVariables/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.FileExtensions/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.FileProviders.Physical": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Ini/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Configuration.FileExtensions": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Ini.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Ini.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Json/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Configuration.FileExtensions": "2.1.1",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Xml/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Configuration.FileExtensions": "2.1.1",
+          "System.Security.Cryptography.Xml": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Xml.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Xml.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1"
+        },
+        "compile": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyModel/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.DotNet.PlatformAbstractions": "2.1.0",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net451/Microsoft.Extensions.DependencyModel.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Extensions.DependencyModel.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Physical/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "2.1.1",
+          "Microsoft.Extensions.FileSystemGlobbing": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileSystemGlobbing/2.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.1",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+        }
+      },
+      "Newtonsoft.Json/11.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Remotion.Linq/2.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Remotion.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Remotion.Linq.dll": {}
+        }
+      },
+      "Sitecore.Framework.Conditions/4.1.0-alpha1.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Conditions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Conditions.dll": {}
+        }
+      },
+      "Sitecore.Framework.Configuration/5.4.0-alpha1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Configuration.Ini": "2.1.1",
+          "Microsoft.Extensions.Configuration.Json": "2.1.1",
+          "Microsoft.Extensions.Configuration.Xml": "2.1.1",
+          "Microsoft.Extensions.DependencyInjection": "2.1.1",
+          "Microsoft.Extensions.DependencyModel": "2.1.0",
+          "Sitecore.Framework.Configuration.Abstractions": "5.4.0-alpha1.2",
+          "Sitecore.Framework.Configuration.Common": "5.4.0-alpha1.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.dll": {}
+        }
+      },
+      "Sitecore.Framework.Configuration.Abstractions/5.4.0-alpha1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.1.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
+          "Microsoft.Extensions.FileProviders.Physical": "2.1.1",
+          "Sitecore.Framework.Conditions": "4.1.0-alpha1.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Sitecore.Framework.Configuration.Common/5.4.0-alpha1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.Common.dll": {}
+        }
+      },
+      "Sitecore.Framework.Configuration.Extensions/5.4.0-alpha1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "Microsoft.Extensions.Configuration.Binder": "2.1.1",
+          "Microsoft.Extensions.Configuration.CommandLine": "2.1.1",
+          "Microsoft.Extensions.Configuration.EnvironmentVariables": "2.1.1",
+          "Microsoft.Extensions.Configuration.Ini": "2.1.1",
+          "Microsoft.Extensions.Configuration.Json": "2.1.1",
+          "Microsoft.Extensions.Configuration.Xml": "2.1.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
+          "Microsoft.Extensions.FileSystemGlobbing": "2.1.1",
+          "Sitecore.Framework.Conditions": "4.1.0-alpha1.2",
+          "Sitecore.Framework.Configuration": "5.4.0-alpha1.2",
+          "Sitecore.Framework.Configuration.Abstractions": "5.4.0-alpha1.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Framework.Configuration.Extensions.dll": {}
+        }
+      },
+      "Sitecore.XConnect/5.0.0-r00265.1294": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "Remotion.Linq": "2.2.0",
+          "Sitecore.XConnect.Core": "3.1.0-r00245.912",
+          "Sitecore.XConnect.Diagnostics": "3.3.0-r00090.718",
+          "Sitecore.XConnect.Search": "2.3.0-r00083.463",
+          "System.Interactive.Async.Providers": "3.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.XConnect.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.XConnect.dll": {}
+        }
+      },
+      "Sitecore.XConnect.Client/2.1.0-r00137.42": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.XConnect": "2.1.0-r00224",
+          "Sitecore.Xdb.Common.Web": "3.1.0-r00052.31"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.XConnect.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.XConnect.Client.dll": {}
+        }
+      },
+      "Sitecore.XConnect.Collection.Model/2.1.0-r00224": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.XConnect": "2.1.0-r00224"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.XConnect.Collection.Model.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.XConnect.Collection.Model.dll": {}
+        }
+      },
+      "Sitecore.XConnect.Core/3.1.0-r00245.912": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "Remotion.Linq": "2.2.0",
+          "Sitecore.XConnect.Diagnostics": "3.3.0-r00090.718",
+          "Sitecore.XConnect.Search": "2.3.0-r00083.463",
+          "System.Interactive.Async.Providers": "3.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.XConnect.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.XConnect.Core.dll": {}
+        }
+      },
+      "Sitecore.XConnect.Diagnostics/3.3.0-r00090.718": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
+          "Sitecore.Framework.Conditions": "4.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.XConnect.Diagnostics.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.XConnect.Diagnostics.dll": {}
+        }
+      },
+      "Sitecore.XConnect.Search/2.3.0-r00083.463": {
+        "type": "package",
+        "dependencies": {
+          "Sitecore.Framework.Conditions": "4.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.XConnect.Search.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.XConnect.Search.dll": {}
+        }
+      },
+      "Sitecore.Xdb.Common.Web/3.3.0-r00057.465": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.6",
+          "Microsoft.Extensions.DependencyInjection": "2.1.1",
+          "Newtonsoft.Json": "11.0.2",
+          "Sitecore.Framework.Configuration.Extensions": "5.3.0",
+          "System.Interactive.Async": "3.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Sitecore.Xdb.Common.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Sitecore.Xdb.Common.Web.dll": {}
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {}
+        }
+      },
+      "System.Interactive.Async/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net46/System.Interactive.Async.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Interactive.Async.dll": {}
+        }
+      },
+      "System.Interactive.Async.Providers/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Interactive.Async": "3.1.1"
+        },
+        "compile": {
+          "lib/net45/System.Interactive.Async.Providers.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Interactive.Async.Providers.dll": {}
+        }
+      },
+      "System.Memory/4.5.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/_._": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.RuntimeInformation/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll": {}
+        }
+      },
+      "System.Security.AccessControl/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Principal.Windows": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.AccessControl.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.AccessControl.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Xml/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Permissions": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Security",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Cryptography.Xml.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.Cryptography.Xml.dll": {}
+        }
+      },
+      "System.Security.Permissions/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.AccessControl": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Data",
+          "System.Data.OracleClient",
+          "System.Drawing",
+          "System.Net",
+          "System.ServiceProcess",
+          "System.Transactions",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.Permissions.dll": {}
+        }
+      },
+      "System.Security.Principal.Windows/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Principal.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.Principal.Windows.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.AspNet.WebApi.Client/5.2.6": {
+      "sha512": "owAlEIUZXWSnkK8Z1c+zR47A0X6ykF4XjbPok4lQKNuciUfHLGPd6QnI+rt/8KlQ17PmF+I4S3f+m+Qe4IvViw==",
+      "type": "package",
+      "path": "microsoft.aspnet.webapi.client/5.2.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/System.Net.Http.Formatting.dll",
+        "lib/net45/System.Net.Http.Formatting.xml",
+        "lib/netstandard2.0/System.Net.Http.Formatting.dll",
+        "lib/netstandard2.0/System.Net.Http.Formatting.xml",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.xml",
+        "microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
+        "microsoft.aspnet.webapi.client.nuspec"
+      ]
+    },
+    "Microsoft.DotNet.PlatformAbstractions/2.1.0": {
+      "sha512": "9KPDwvb/hLEVXYruVHVZ8BkebC8j17DmPb56LnqRF74HqSPLjCkrlFUjOtFpQPA2DeADBRTI/e69aCfRBfrhxw==",
+      "type": "package",
+      "path": "microsoft.dotnet.platformabstractions/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/Microsoft.DotNet.PlatformAbstractions.dll",
+        "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll",
+        "microsoft.dotnet.platformabstractions.2.1.0.nupkg.sha512",
+        "microsoft.dotnet.platformabstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration/2.1.1": {
+      "sha512": "LjVKO6P2y52c5ZhTLX/w8zc5H4Y3J/LJsgqTBj49TtFq/hAtVNue/WA0F6/7GMY90xhD7K0MDZ4qpOeWXbLvzg==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
+        "microsoft.extensions.configuration.2.1.1.nupkg.sha512",
+        "microsoft.extensions.configuration.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/2.1.1": {
+      "sha512": "VfuZJNa0WUshZ/+8BFZAhwFKiKuu/qOUCFntfdLpHj7vcRnsGHqd3G2Hse78DM+pgozczGM63lGPRLmy+uhUOA==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.abstractions/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "microsoft.extensions.configuration.abstractions.2.1.1.nupkg.sha512",
+        "microsoft.extensions.configuration.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Binder/2.1.1": {
+      "sha512": "fcLCTS03poWE4v9tSNBr3pWn0QwGgAn1vzqHXlXgvqZeOc7LvQNzaWcKRQZTdEc3+YhQKwMsOtm3VKSA2aWQ8w==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.binder/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.xml",
+        "microsoft.extensions.configuration.binder.2.1.1.nupkg.sha512",
+        "microsoft.extensions.configuration.binder.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.CommandLine/2.1.1": {
+      "sha512": "ZFEOXcp9gZdOoINRGg6sUYqEUU6X4HRShPPLbY9tY/r+PTWyVBwucYzuueHLE7k5yxJTNBnIHpxtJ8PMvxjjBQ==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.commandline/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.CommandLine.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.CommandLine.xml",
+        "microsoft.extensions.configuration.commandline.2.1.1.nupkg.sha512",
+        "microsoft.extensions.configuration.commandline.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.EnvironmentVariables/2.1.1": {
+      "sha512": "6xMxFIfKL+7J/jwlk8zV8I61sF3+DRG19iKQxnSfYQU+iMMjGbcWNCHFF/3MHf3o4sTZPZ8D6Io+GwKFc3TIZA==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.environmentvariables/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.xml",
+        "microsoft.extensions.configuration.environmentvariables.2.1.1.nupkg.sha512",
+        "microsoft.extensions.configuration.environmentvariables.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.FileExtensions/2.1.1": {
+      "sha512": "CDk5CwG0YzlRgvl65J0iK6ahrX12yMRrEat3yVTXjWC+GN9Jg9zHZu2IE4cQIPAMA/IiAI5KjgL08fhP3fPCkw==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.fileextensions/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.xml",
+        "microsoft.extensions.configuration.fileextensions.2.1.1.nupkg.sha512",
+        "microsoft.extensions.configuration.fileextensions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Ini/2.1.1": {
+      "sha512": "+/7imv6queNr3UrU7ynXR9ZZ0rz/HW+HcpUnAjwxIxn8KcoBVv44/UlHYzt3AipVJYbswFiB1FjsQ0IQhffBiA==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.ini/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Ini.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Ini.xml",
+        "microsoft.extensions.configuration.ini.2.1.1.nupkg.sha512",
+        "microsoft.extensions.configuration.ini.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Json/2.1.1": {
+      "sha512": "IFpONpvdhVEE3S3F4fTYkpT/GyIHtumy2m0HniQanJ80Pj/pUF3Z4wjrHEp1G78rPD+WTo5fRlhdJfuU1Tv2GQ==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.json/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.xml",
+        "microsoft.extensions.configuration.json.2.1.1.nupkg.sha512",
+        "microsoft.extensions.configuration.json.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Xml/2.1.1": {
+      "sha512": "DDqm0Lqc8+Be2oB6g/xKtz3n/W9DOXOCz0DAgUXTgwsZ2XnNzy6Areop9SmPKd0ezSZWZ/soOAZbhlu5otoKDg==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.xml/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Xml.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Xml.xml",
+        "microsoft.extensions.configuration.xml.2.1.1.nupkg.sha512",
+        "microsoft.extensions.configuration.xml.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection/2.1.1": {
+      "sha512": "RVdgNWT/73M0eCpreGpWv5NmbHFGQzzW+G7nChK8ej84m+d1nzeWrtqcRYnEpKNx3B8V/Uek4tNP0WCaCNjYnQ==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "microsoft.extensions.dependencyinjection.2.1.1.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1": {
+      "sha512": "MgYpU5cwZohUMKKg3sbPhvGG+eAZ/59E9UwPwlrUkyXU+PGzqwZg9yyQNjhxuAWmoNoFReoemeCku50prYSGzA==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.2.1.1.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.DependencyModel/2.1.0": {
+      "sha512": "nS2XKqi+1A1umnYNLX2Fbm/XnzCxs5i+zXVJ3VC6r9t2z0NZr9FLnJN4VQpKigdcWH/iFTbMuX6M6WQJcTjVIg==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencymodel/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net451/Microsoft.Extensions.DependencyModel.dll",
+        "lib/netstandard1.3/Microsoft.Extensions.DependencyModel.dll",
+        "lib/netstandard1.6/Microsoft.Extensions.DependencyModel.dll",
+        "microsoft.extensions.dependencymodel.2.1.0.nupkg.sha512",
+        "microsoft.extensions.dependencymodel.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions/2.1.1": {
+      "sha512": "UEQB5/QPuLYaCvScZQ9llhcks5xyEUKh41D615FoehRAF9UgGVmXHcCSOH8idHHLRoKm+OJJjEy1oywvuaL33w==",
+      "type": "package",
+      "path": "microsoft.extensions.fileproviders.abstractions/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.xml",
+        "microsoft.extensions.fileproviders.abstractions.2.1.1.nupkg.sha512",
+        "microsoft.extensions.fileproviders.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.FileProviders.Physical/2.1.1": {
+      "sha512": "kVCvLm1ePchUgRrQZrno07Mn6knDAzR7vl6eRaI/fem0u6ODg+RTwOYLs4XL39Ttuu+BzEwqzHu3DtDgXT8+vQ==",
+      "type": "package",
+      "path": "microsoft.extensions.fileproviders.physical/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.xml",
+        "microsoft.extensions.fileproviders.physical.2.1.1.nupkg.sha512",
+        "microsoft.extensions.fileproviders.physical.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.FileSystemGlobbing/2.1.1": {
+      "sha512": "4QDzyCN8cJnThY6mK9SnzovyCZ8KCG9jmC9KqHfFGtazJvmNZP1gcyBkPmqMjP0qwbmEUUyqyA9LLn3FrYXTGw==",
+      "type": "package",
+      "path": "microsoft.extensions.filesystemglobbing/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.xml",
+        "microsoft.extensions.filesystemglobbing.2.1.1.nupkg.sha512",
+        "microsoft.extensions.filesystemglobbing.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Primitives/2.1.1": {
+      "sha512": "scJ1GZNIxMmjpENh0UZ8XCQ6vzr/LzeF9WvEA51Ix2OQGAs9WPgPu8ABVUdvpKPLuor/t05gm6menJK3PwqOXg==",
+      "type": "package",
+      "path": "microsoft.extensions.primitives/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
+        "microsoft.extensions.primitives.2.1.1.nupkg.sha512",
+        "microsoft.extensions.primitives.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/11.0.2": {
+      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+      "type": "package",
+      "path": "newtonsoft.json/11.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.11.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
+    },
+    "Remotion.Linq/2.2.0": {
+      "sha512": "fK/76UmpC0FXBlGDFVPLJHQlDLYnGC+XY3eoDgCgbtrhi0vzbXDQ3n/IYHhqSKqXQfGw/u04A1drWs7rFVkRjw==",
+      "type": "package",
+      "path": "remotion.linq/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/Remotion.Linq.XML",
+        "lib/net35/Remotion.Linq.dll",
+        "lib/net40/Remotion.Linq.XML",
+        "lib/net40/Remotion.Linq.dll",
+        "lib/net45/Remotion.Linq.XML",
+        "lib/net45/Remotion.Linq.dll",
+        "lib/netstandard1.0/Remotion.Linq.dll",
+        "lib/netstandard1.0/Remotion.Linq.xml",
+        "lib/portable-net45+win+wpa81+wp80/Remotion.Linq.dll",
+        "lib/portable-net45+win+wpa81+wp80/Remotion.Linq.xml",
+        "remotion.linq.2.2.0.nupkg.sha512",
+        "remotion.linq.nuspec"
+      ]
+    },
+    "Sitecore.Framework.Conditions/4.1.0-alpha1.3": {
+      "sha512": "e38eQnjV1EERcIX4YN5UmJViJAsIhcJmkYyx8QQTUgj6le+keHVhabOSQVteRasLHcwQt6fKBJdzuZ3MwcJVeQ==",
+      "type": "package",
+      "path": "sitecore.framework.conditions/4.1.0-alpha1.3",
+      "files": [
+        ".nupkg.metadata",
+        "lib/netstandard2.0/Sitecore.Framework.Conditions.dll",
+        "lib/netstandard2.0/Sitecore.Framework.Conditions.xml",
+        "sitecore.framework.conditions.4.1.0-alpha1.3.nupkg.sha512",
+        "sitecore.framework.conditions.nuspec",
+        "sitecore.myget.licence.md"
+      ]
+    },
+    "Sitecore.Framework.Configuration/5.4.0-alpha1.2": {
+      "sha512": "USGo9yGlDT/nduzxAMF6QnN3IEH3sUyH5HW8VFSaCsbqc4hzaAiLsGGIt3azJRPSRJiyY1Fk0Vq9bwdRKUZg5A==",
+      "type": "package",
+      "path": "sitecore.framework.configuration/5.4.0-alpha1.2",
+      "files": [
+        ".nupkg.metadata",
+        "lib/netstandard2.0/Sitecore.Framework.Configuration.dll",
+        "lib/netstandard2.0/Sitecore.Framework.Configuration.xml",
+        "sitecore.framework.configuration.5.4.0-alpha1.2.nupkg.sha512",
+        "sitecore.framework.configuration.nuspec",
+        "sitecore.myget.licence.md"
+      ]
+    },
+    "Sitecore.Framework.Configuration.Abstractions/5.4.0-alpha1.2": {
+      "sha512": "Yae/wK08bbxW+j4PIHfEsUcumt/GqlSfAlqKF/t8Cxy0lkFou/04Zmz8JKLcBrGA06/eb6cNDsxH8t+3WPupEw==",
+      "type": "package",
+      "path": "sitecore.framework.configuration.abstractions/5.4.0-alpha1.2",
+      "files": [
+        ".nupkg.metadata",
+        "lib/netstandard2.0/Sitecore.Framework.Configuration.Abstractions.dll",
+        "lib/netstandard2.0/Sitecore.Framework.Configuration.Abstractions.xml",
+        "sitecore.framework.configuration.abstractions.5.4.0-alpha1.2.nupkg.sha512",
+        "sitecore.framework.configuration.abstractions.nuspec",
+        "sitecore.myget.licence.md"
+      ]
+    },
+    "Sitecore.Framework.Configuration.Common/5.4.0-alpha1.2": {
+      "sha512": "NYOpzzLqnw54wTFrnwIW9i8w97uuhE4jwGW8eXjyxj1jaP3dJWBCpG4hAr+FzDXqvCxRJ0afHEjlDKZ19eSnQA==",
+      "type": "package",
+      "path": "sitecore.framework.configuration.common/5.4.0-alpha1.2",
+      "files": [
+        ".nupkg.metadata",
+        "lib/netstandard2.0/Sitecore.Framework.Configuration.Common.dll",
+        "lib/netstandard2.0/Sitecore.Framework.Configuration.Common.xml",
+        "sitecore.framework.configuration.common.5.4.0-alpha1.2.nupkg.sha512",
+        "sitecore.framework.configuration.common.nuspec",
+        "sitecore.myget.licence.md"
+      ]
+    },
+    "Sitecore.Framework.Configuration.Extensions/5.4.0-alpha1.2": {
+      "sha512": "BHCIMtfAZY8XQXyApDBx3d5dxvyLcdOP/QCBf9YwDbCzdDecRuucXIy5biPbW3nVRWTVkGkEpv3wtSEvfDYd2Q==",
+      "type": "package",
+      "path": "sitecore.framework.configuration.extensions/5.4.0-alpha1.2",
+      "files": [
+        ".nupkg.metadata",
+        "lib/netstandard2.0/Sitecore.Framework.Configuration.Extensions.dll",
+        "lib/netstandard2.0/Sitecore.Framework.Configuration.Extensions.xml",
+        "sitecore.framework.configuration.extensions.5.4.0-alpha1.2.nupkg.sha512",
+        "sitecore.framework.configuration.extensions.nuspec",
+        "sitecore.myget.licence.md"
+      ]
+    },
+    "Sitecore.XConnect/5.0.0-r00265.1294": {
+      "sha512": "QA0ecUSUA/qybXGglw0+4kR4vzbF10sAVF6mqV/RuDL7twUByb4SzXVaNX0FSehjk3mNCWxkm5IydIVI+kPLtA==",
+      "type": "package",
+      "path": "sitecore.xconnect/5.0.0-r00265.1294",
+      "files": [
+        ".nupkg.metadata",
+        "Sitecore.Myget.Licence.md",
+        "lib/netstandard2.0/Sitecore.XConnect.dll",
+        "sitecore.xconnect.5.0.0-r00265.1294.nupkg.sha512",
+        "sitecore.xconnect.nuspec"
+      ]
+    },
+    "Sitecore.XConnect.Client/2.1.0-r00137.42": {
+      "sha512": "368Z6AvzItGdV483/3IfuetnPCx/EXDFvi9Yh+uGu+5Mwk5qqjo+WlspO9dzXsKmSy2t6IAPcjQ24kYySdW3oA==",
+      "type": "package",
+      "path": "sitecore.xconnect.client/2.1.0-r00137.42",
+      "files": [
+        ".nupkg.metadata",
+        "Sitecore.Myget.Licence.md",
+        "lib/netstandard2.0/Sitecore.XConnect.Client.dll",
+        "sitecore.xconnect.client.2.1.0-r00137.42.nupkg.sha512",
+        "sitecore.xconnect.client.nuspec"
+      ]
+    },
+    "Sitecore.XConnect.Collection.Model/2.1.0-r00224": {
+      "sha512": "It4o3kwoW4GS2WfmYh7b59xbG0djFQBvd7kO7PZVKyXLnskoXTzhz7+dgaj+Jz8wegG73KXVzJmlUaigC+UKRw==",
+      "type": "package",
+      "path": "sitecore.xconnect.collection.model/2.1.0-r00224",
+      "files": [
+        ".nupkg.metadata",
+        "lib/netstandard2.0/Sitecore.XConnect.Collection.Model.dll",
+        "sitecore.xconnect.collection.model.2.1.0-r00224.nupkg.sha512",
+        "sitecore.xconnect.collection.model.nuspec"
+      ]
+    },
+    "Sitecore.XConnect.Core/3.1.0-r00245.912": {
+      "sha512": "Oh/OzKwK8A/n873wsi8GkNZrJEvWxO8eNuVmuxV1nXZvcZKYNhixlHKg9x5ZeMcDJZoTFA6qiCl/SEKp9AxHkg==",
+      "type": "package",
+      "path": "sitecore.xconnect.core/3.1.0-r00245.912",
+      "files": [
+        ".nupkg.metadata",
+        "Sitecore.Myget.Licence.md",
+        "lib/netstandard2.0/Sitecore.XConnect.Core.dll",
+        "sitecore.xconnect.core.3.1.0-r00245.912.nupkg.sha512",
+        "sitecore.xconnect.core.nuspec"
+      ]
+    },
+    "Sitecore.XConnect.Diagnostics/3.3.0-r00090.718": {
+      "sha512": "kKmwpeLza/oOdBmbH9JLjnXq4gDphqcaZ5CSFDlXaCwTxPyhXGAszsu+6zhOCCkCyT5A76Gc0IglaqyTBygiQw==",
+      "type": "package",
+      "path": "sitecore.xconnect.diagnostics/3.3.0-r00090.718",
+      "files": [
+        ".nupkg.metadata",
+        "Sitecore.Myget.Licence.md",
+        "lib/netstandard2.0/Sitecore.XConnect.Diagnostics.dll",
+        "sitecore.xconnect.diagnostics.3.3.0-r00090.718.nupkg.sha512",
+        "sitecore.xconnect.diagnostics.nuspec"
+      ]
+    },
+    "Sitecore.XConnect.Search/2.3.0-r00083.463": {
+      "sha512": "0QKsqMo6dWR6CfsyZIvJglwJcvlSXsx4AZ3fqbV22kDj0w+unIydu6bsPUezzRr13aUVNe3AZtaARyJnaEMuzQ==",
+      "type": "package",
+      "path": "sitecore.xconnect.search/2.3.0-r00083.463",
+      "files": [
+        ".nupkg.metadata",
+        "Sitecore.Myget.Licence.md",
+        "lib/netstandard2.0/Sitecore.XConnect.Search.dll",
+        "sitecore.xconnect.search.2.3.0-r00083.463.nupkg.sha512",
+        "sitecore.xconnect.search.nuspec"
+      ]
+    },
+    "Sitecore.Xdb.Common.Web/3.3.0-r00057.465": {
+      "sha512": "zVAgXZ7VAgKiozn6Pf3LmkpBXIgbVomUezA9fFeioX+L9bq4N5Cm9SZOAXKUVbCZHd6mW9xUJU4i7Z9m2HQ/0w==",
+      "type": "package",
+      "path": "sitecore.xdb.common.web/3.3.0-r00057.465",
+      "files": [
+        ".nupkg.metadata",
+        "Sitecore.Myget.Licence.md",
+        "lib/netstandard2.0/Sitecore.Xdb.Common.Web.dll",
+        "lib/netstandard2.0/Sitecore.Xdb.Common.Web.xml",
+        "sitecore.xdb.common.web.3.3.0-r00057.465.nupkg.sha512",
+        "sitecore.xdb.common.web.nuspec"
+      ]
+    },
+    "System.Buffers/4.4.0": {
+      "sha512": "AwarXzzoDwX6BgrhjoJsk6tUezZEozOT5Y9QKF94Gl4JK91I4PIIBkBco9068Y9/Dra8Dkbie99kXB8+1BaYKw==",
+      "type": "package",
+      "path": "system.buffers/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Buffers.dll",
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "system.buffers.4.4.0.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Interactive.Async/3.1.1": {
+      "sha512": "hZccYiIE5RS1/J9Tb/BNtosAGVggdlsJm4Ojdu+gDV0p4AIi+LUfUogMKkRacljQEJd2AG6vYzvcjhQFkqoZmw==",
+      "type": "package",
+      "path": "system.interactive.async/3.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/System.Interactive.Async.dll",
+        "lib/net45/System.Interactive.Async.xml",
+        "lib/net46/System.Interactive.Async.dll",
+        "lib/net46/System.Interactive.Async.xml",
+        "lib/netstandard1.0/System.Interactive.Async.dll",
+        "lib/netstandard1.0/System.Interactive.Async.xml",
+        "lib/netstandard1.3/System.Interactive.Async.dll",
+        "lib/netstandard1.3/System.Interactive.Async.xml",
+        "system.interactive.async.3.1.1.nupkg.sha512",
+        "system.interactive.async.nuspec"
+      ]
+    },
+    "System.Interactive.Async.Providers/3.1.1": {
+      "sha512": "S1RgKwh5jrkYERv9Z8uo1K2JK1tqIQ0G1coxWUTKt56+eXmp6Ad47hlIf54WGkSNyO6dLy4NsUbL5hW9Kowzzg==",
+      "type": "package",
+      "path": "system.interactive.async.providers/3.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/System.Interactive.Async.Providers.dll",
+        "lib/net45/System.Interactive.Async.Providers.xml",
+        "lib/netstandard1.0/System.Interactive.Async.Providers.dll",
+        "lib/netstandard1.0/System.Interactive.Async.Providers.xml",
+        "system.interactive.async.providers.3.1.1.nupkg.sha512",
+        "system.interactive.async.providers.nuspec"
+      ]
+    },
+    "System.Memory/4.5.1": {
+      "sha512": "sDJYJpGtTgx+23Ayu5euxG5mAXWdkDb4+b0rD0Cab0M1oQS9H0HXGPriKcqpXuiJDTV7fTp/d+fMDJmnr6sNvA==",
+      "type": "package",
+      "path": "system.memory/4.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "ref/netstandard1.1/System.Memory.dll",
+        "ref/netstandard1.1/System.Memory.xml",
+        "ref/netstandard2.0/System.Memory.dll",
+        "ref/netstandard2.0/System.Memory.xml",
+        "system.memory.4.5.1.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Numerics.Vectors/4.4.0": {
+      "sha512": "UiLzLW+Lw6HLed1Hcg+8jSRttrbuXv7DANVj0DkL9g6EnnzbL75EB7EWsw5uRbhxd/4YdG8li5XizGWepmG3PQ==",
+      "type": "package",
+      "path": "system.numerics.vectors/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Numerics.Vectors.dll",
+        "lib/net46/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Numerics.Vectors.dll",
+        "lib/netstandard1.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Numerics.Vectors.dll",
+        "ref/net46/System.Numerics.Vectors.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/System.Numerics.Vectors.dll",
+        "ref/netstandard1.0/System.Numerics.Vectors.xml",
+        "ref/netstandard2.0/System.Numerics.Vectors.dll",
+        "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.numerics.vectors.4.4.0.nupkg.sha512",
+        "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+      "sha512": "Zh8t8oqolRaFa9vmOZfdQm/qKejdqz0J9kr7o2Fu0vPeoH3BL1EOXipKWwkWtLT1JPzjByrF19fGuFlNbmPpiw==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.InteropServices.RuntimeInformation/4.0.0": {
+      "sha512": "hWPhJxc453RCa8Z29O91EmfGeZIHX1ZH2A8L6lYQVSaKzku2DfArSfMEb1/MYYzPQRJZeu0c9dmYeJKxW5Fgng==",
+      "type": "package",
+      "path": "system.runtime.interopservices.runtimeinformation/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "lib/win8/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "lib/wpa81/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/aot/lib/netcore50/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "runtimes/unix/lib/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "runtimes/win/lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "runtimes/win/lib/netcore50/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "runtimes/win/lib/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "system.runtime.interopservices.runtimeinformation.4.0.0.nupkg.sha512",
+        "system.runtime.interopservices.runtimeinformation.nuspec"
+      ]
+    },
+    "System.Security.AccessControl/4.5.0": {
+      "sha512": "vW8Eoq0TMyz5vAG/6ce483x/CP83fgm4SJe5P8Tb1tZaobcvPrbMEL7rhH1DRdrYbbb6F0vq3OlzmK0Pkwks5A==",
+      "type": "package",
+      "path": "system.security.accesscontrol/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.Security.AccessControl.dll",
+        "lib/net461/System.Security.AccessControl.dll",
+        "lib/netstandard1.3/System.Security.AccessControl.dll",
+        "lib/netstandard2.0/System.Security.AccessControl.dll",
+        "lib/uap10.0.16299/_._",
+        "ref/net46/System.Security.AccessControl.dll",
+        "ref/net461/System.Security.AccessControl.dll",
+        "ref/net461/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/System.Security.AccessControl.dll",
+        "ref/netstandard1.3/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/de/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/es/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/fr/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/it/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ja/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ko/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ru/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.AccessControl.xml",
+        "ref/netstandard2.0/System.Security.AccessControl.dll",
+        "ref/netstandard2.0/System.Security.AccessControl.xml",
+        "ref/uap10.0.16299/_._",
+        "runtimes/win/lib/net46/System.Security.AccessControl.dll",
+        "runtimes/win/lib/net461/System.Security.AccessControl.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll",
+        "runtimes/win/lib/netstandard1.3/System.Security.AccessControl.dll",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.security.accesscontrol.4.5.0.nupkg.sha512",
+        "system.security.accesscontrol.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.Cryptography.Xml/4.5.0": {
+      "sha512": "i2Jn6rGXR63J0zIklImGRkDIJL4b1NfPSEbIVHBlqoIb12lfXIigCbDRpDmIEzwSo/v1U5y/rYJdzZYSyCWxvg==",
+      "type": "package",
+      "path": "system.security.cryptography.xml/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Security.Cryptography.Xml.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.Xml.dll",
+        "ref/net461/System.Security.Cryptography.Xml.dll",
+        "ref/net461/System.Security.Cryptography.Xml.xml",
+        "ref/netstandard2.0/System.Security.Cryptography.Xml.dll",
+        "ref/netstandard2.0/System.Security.Cryptography.Xml.xml",
+        "system.security.cryptography.xml.4.5.0.nupkg.sha512",
+        "system.security.cryptography.xml.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.Permissions/4.5.0": {
+      "sha512": "9gdyuARhUR7H+p5CjyUB/zPk7/Xut3wUSP8NJQB6iZr8L3XUXTMdoLeVAg9N4rqF8oIpE7MpdqHdDHQ7XgJe0g==",
+      "type": "package",
+      "path": "system.security.permissions/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Security.Permissions.dll",
+        "lib/netstandard2.0/System.Security.Permissions.dll",
+        "ref/net461/System.Security.Permissions.dll",
+        "ref/net461/System.Security.Permissions.xml",
+        "ref/netstandard2.0/System.Security.Permissions.dll",
+        "ref/netstandard2.0/System.Security.Permissions.xml",
+        "system.security.permissions.4.5.0.nupkg.sha512",
+        "system.security.permissions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.Principal.Windows/4.5.0": {
+      "sha512": "U77HfRXlZlOeIXd//Yoj6Jnk8AXlbeisf1oq1os+hxOGVnuG+lGSfGqTwTZBoORFF6j/0q7HXIl8cqwQ9aUGqQ==",
+      "type": "package",
+      "path": "system.security.principal.windows/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.Security.Principal.Windows.dll",
+        "lib/net461/System.Security.Principal.Windows.dll",
+        "lib/netstandard1.3/System.Security.Principal.Windows.dll",
+        "lib/netstandard2.0/System.Security.Principal.Windows.dll",
+        "lib/uap10.0.16299/_._",
+        "ref/net46/System.Security.Principal.Windows.dll",
+        "ref/net461/System.Security.Principal.Windows.dll",
+        "ref/net461/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/System.Security.Principal.Windows.dll",
+        "ref/netstandard1.3/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/de/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/es/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/fr/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/it/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ja/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ko/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ru/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.Principal.Windows.xml",
+        "ref/netstandard2.0/System.Security.Principal.Windows.dll",
+        "ref/netstandard2.0/System.Security.Principal.Windows.xml",
+        "ref/uap10.0.16299/_._",
+        "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/net46/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/net461/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netstandard1.3/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.security.principal.windows.4.5.0.nupkg.sha512",
+        "system.security.principal.windows.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "Sitecore.Framework.Conditions >= 4.1.0-alpha1.3",
+      "Sitecore.Framework.Configuration.Extensions >= 5.4.0-alpha1.2",
+      "Sitecore.XConnect >= 4.0.0-r00245.1017",
+      "Sitecore.XConnect.Client >= 2.1.0-r00137.42",
+      "Sitecore.XConnect.Collection.Model >= 2.1.0-r00224",
+      "Sitecore.XConnect.Diagnostics >= 3.2.0-r00085.592",
+      "Sitecore.XConnect.Search >= 2.2.0-r00080.348",
+      "Sitecore.Xdb.Common.Web >= 3.2.0-r00053.356"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\ayu\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\MyData\\Projects\\XConnectOperations\\DataGeneration\\DataGeneration.csproj",
+      "projectName": "DataGeneration",
+      "projectPath": "C:\\MyData\\Projects\\XConnectOperations\\DataGeneration\\DataGeneration.csproj",
+      "packagesPath": "C:\\Users\\ayu\\.nuget\\packages\\",
+      "outputPath": "C:\\MyData\\Projects\\XConnectOperations\\DataGeneration\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\ayu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://nuget1dk1/nuget/9.2.0_master": {},
+        "http://nuget1dk1:8181/nuget/Sitecore_Gallery": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "dependencies": {
+          "Sitecore.Framework.Conditions": {
+            "target": "Package",
+            "version": "[4.1.0-alpha1.3, )"
+          },
+          "Sitecore.Framework.Configuration.Extensions": {
+            "target": "Package",
+            "version": "[5.4.0-alpha1.2, )"
+          },
+          "Sitecore.XConnect": {
+            "target": "Package",
+            "version": "[4.0.0-r00245.1017, )"
+          },
+          "Sitecore.XConnect.Client": {
+            "target": "Package",
+            "version": "[2.1.0-r00137.42, )"
+          },
+          "Sitecore.XConnect.Collection.Model": {
+            "target": "Package",
+            "version": "[2.1.0-r00224, )"
+          },
+          "Sitecore.XConnect.Diagnostics": {
+            "target": "Package",
+            "version": "[3.2.0-r00085.592, )"
+          },
+          "Sitecore.XConnect.Search": {
+            "target": "Package",
+            "version": "[2.2.0-r00080.348, )"
+          },
+          "Sitecore.Xdb.Common.Web": {
+            "target": "Package",
+            "version": "[3.2.0-r00053.356, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "DataGeneration depends on Sitecore.XConnect (>= 4.0.0-r00245.1017) but Sitecore.XConnect 4.0.0-r00245.1017 was not found. An approximate best match of Sitecore.XConnect 5.0.0-r00265.1294 was resolved.",
+      "libraryId": "Sitecore.XConnect",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2",
+        ".NETFramework,Version=v4.7.2/win",
+        ".NETFramework,Version=v4.7.2/win-x64",
+        ".NETFramework,Version=v4.7.2/win-x86"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "DataGeneration depends on Sitecore.XConnect.Diagnostics (>= 3.2.0-r00085.592) but Sitecore.XConnect.Diagnostics 3.2.0-r00085.592 was not found. An approximate best match of Sitecore.XConnect.Diagnostics 3.3.0-r00090.718 was resolved.",
+      "libraryId": "Sitecore.XConnect.Diagnostics",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2",
+        ".NETFramework,Version=v4.7.2/win",
+        ".NETFramework,Version=v4.7.2/win-x64",
+        ".NETFramework,Version=v4.7.2/win-x86"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "DataGeneration depends on Sitecore.XConnect.Search (>= 2.2.0-r00080.348) but Sitecore.XConnect.Search 2.2.0-r00080.348 was not found. An approximate best match of Sitecore.XConnect.Search 2.3.0-r00083.463 was resolved.",
+      "libraryId": "Sitecore.XConnect.Search",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2",
+        ".NETFramework,Version=v4.7.2/win",
+        ".NETFramework,Version=v4.7.2/win-x64",
+        ".NETFramework,Version=v4.7.2/win-x86"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "DataGeneration depends on Sitecore.Xdb.Common.Web (>= 3.2.0-r00053.356) but Sitecore.Xdb.Common.Web 3.2.0-r00053.356 was not found. An approximate best match of Sitecore.Xdb.Common.Web 3.3.0-r00057.465 was resolved.",
+      "libraryId": "Sitecore.Xdb.Common.Web",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2",
+        ".NETFramework,Version=v4.7.2/win",
+        ".NETFramework,Version=v4.7.2/win-x64",
+        ".NETFramework,Version=v4.7.2/win-x86"
+      ]
+    }
+  ]
+}

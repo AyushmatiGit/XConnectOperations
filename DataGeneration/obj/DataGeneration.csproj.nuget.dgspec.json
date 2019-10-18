@@ -1,0 +1,87 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\MyData\\Projects\\XConnectOperations\\DataGeneration\\DataGeneration.csproj": {}
+  },
+  "projects": {
+    "C:\\MyData\\Projects\\XConnectOperations\\DataGeneration\\DataGeneration.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MyData\\Projects\\XConnectOperations\\DataGeneration\\DataGeneration.csproj",
+        "projectName": "DataGeneration",
+        "projectPath": "C:\\MyData\\Projects\\XConnectOperations\\DataGeneration\\DataGeneration.csproj",
+        "packagesPath": "C:\\Users\\ayu\\.nuget\\packages\\",
+        "outputPath": "C:\\MyData\\Projects\\XConnectOperations\\DataGeneration\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\ayu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget1dk1/nuget/9.2.0_master": {},
+          "http://nuget1dk1:8181/nuget/Sitecore_Gallery": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Sitecore.Framework.Conditions": {
+              "target": "Package",
+              "version": "[4.1.0-alpha1.3, )"
+            },
+            "Sitecore.Framework.Configuration.Extensions": {
+              "target": "Package",
+              "version": "[5.4.0-alpha1.2, )"
+            },
+            "Sitecore.XConnect": {
+              "target": "Package",
+              "version": "[4.0.0-r00245.1017, )"
+            },
+            "Sitecore.XConnect.Client": {
+              "target": "Package",
+              "version": "[2.1.0-r00137.42, )"
+            },
+            "Sitecore.XConnect.Collection.Model": {
+              "target": "Package",
+              "version": "[2.1.0-r00224, )"
+            },
+            "Sitecore.XConnect.Diagnostics": {
+              "target": "Package",
+              "version": "[3.2.0-r00085.592, )"
+            },
+            "Sitecore.XConnect.Search": {
+              "target": "Package",
+              "version": "[2.2.0-r00080.348, )"
+            },
+            "Sitecore.Xdb.Common.Web": {
+              "target": "Package",
+              "version": "[3.2.0-r00053.356, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
